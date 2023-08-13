@@ -37,7 +37,8 @@ def getUDLinks(cv_links):
     return ud_links_data
 
 def get_coupon(title):
-    getPostUrl = 'http://localhost/cv/wp-json/wp/v2/coupon?_fields=acf.coupon_subtitle'
+    #getPostUrl = 'http://localhost/cv/wp-json/wp/v2/coupon?_fields=acf.coupon_subtitle'
+    getPostUrl = 'https://couponsvalley.online/wp-json/wp/v2/coupon?_fields=acf.coupon_subtitle'
     respData = requests.get(getPostUrl)
     jsonList = respData.json()
     for acf in jsonList:
@@ -65,7 +66,8 @@ def create_coupon_wp(title, content, image_url, coupon_url):
         "acf": acfDict
     }
 
-    yourHost = 'http://localhost/cv'
+    #yourHost = 'http://localhost/cv'
+    yourHost = 'https://couponsvalley.online'
     createPostUrl = yourHost + "/wp-json/wp/v2/coupon"  # 'https://www.crifan.com/wp-json/wp/v2/posts'
 
     resp = requests.post(
@@ -120,4 +122,4 @@ def job():
    schedule.run_pending()
    time.sleep(1) '''
 
-job()
+#job()
