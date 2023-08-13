@@ -1,2 +1,14 @@
 uvicorn index:app --reload
 uvicorn main:app --host 0.0.0.0 --port 10000
+
+1. Upload the complete theme
+2. Activate Json basic Auth, CPT, ACF plugins
+3. Activate MyTheme
+4. Generate Base 64 of Username:Password for API call and Add the coupontype Id
+5. Create custom Post as coupon
+6. Create custom Post Type as coupontype
+7. Link them together
+8. Create custom string feilds , coupon_subtitle, image_url, coupon_url
+9. Enable Telegram Plugin
+
+https://www.youtube.com/watch?v=JiA-8oVgPIM
