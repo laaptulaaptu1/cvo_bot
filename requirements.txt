@@ -67,7 +67,6 @@ pyee==8.2.2
 Pygments==2.11.2
 pyOpenSSL==21.0.0
 pyparsing==3.0.8
-pypiwin32==223
 pyppeteer==1.0.2
 pyquery==2.0.0
 pyrsistent==0.18.1
