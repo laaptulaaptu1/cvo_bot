@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 client_apps = ['*']#Our REACT app will be running on this IP and PORT
 
 #Create app
-app = FastAPI()
+app = FastAPI(debug=True)
 #register your router
 app.include_router(cvbot_router)
 
